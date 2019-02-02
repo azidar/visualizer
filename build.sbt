@@ -2,7 +2,7 @@ name := "firrtl-diagrammer"
 
 version := "1.0"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.11.6"
 
 def scalacOptionsVersion(scalaVersion: String): Seq[String] = {
   Seq() ++ {
@@ -37,7 +37,7 @@ resolvers ++= Seq(
 
 // Provide a managed dependency on X if -DXVersion="" is supplied on the command line.
 val defaultVersions = Map(
-  "chisel3" -> "3.2-SNAPSHOT"
+  "chisel3" -> "3.1.0"
   )
 
 libraryDependencies ++= (Seq("chisel3").map {
